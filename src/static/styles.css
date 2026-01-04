@@ -63,6 +63,9 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .activity-card h4 {
@@ -141,4 +144,90 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants section */
+.participants h5 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 6px;
+}
+
+.participants ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participants li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  font-size: 14px;
+  color: #444;
+  list-style: none;
+}
+
+.delete-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #dc3545;
+  background: none;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg,#5b6efc,#1a237e);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex: 0 0 30px;
+}
+
+.participant-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* No participants message */
+.no-participants {
+  margin: 8px 0 0 0;
+  color: #666;
+  font-size: 14px;
+  background: #fafafa;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #f1f1f1;
 }
